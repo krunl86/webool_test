@@ -13,6 +13,7 @@ In this perticular Interview task I have done Functionality like
 - Used Riverpod for state management with MVVM architecture
 - Responsive UI for both Potrait and LandScape Mode (managed separate UI for both orientation)
 - Added Centralized Mechanism to manage Logs,Errors,Toast Msg, Success Msg, Failer Msg etc using Masage Manager Utility
+- project contain 3 Unit test for matching json response from servers and right data parsing based on json format
 
 
 
