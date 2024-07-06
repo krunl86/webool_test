@@ -26,7 +26,7 @@ To Perform this action user has to tap on Add Curency Button On Dashboard
 - User can change currency from drop down field, user also can search with in list view. for this have used 3rd party package due to time constraint
 
 
-# How to Change Base Curerncy ?
+# How to Change Base currency ?
 
 To Perform this action user hase to tap on setting icon
 
@@ -41,7 +41,7 @@ https://youtu.be/NOONaqMayd0
 # Project Setup
 
 - I have used project setup for MVVM structure. along with use of riverpod.
-- Have feature sentric approch for folder structure. where all new feature have their separate MVP folder structure.
+- Have feature sentric approch for folder structure. where all new feature have their separate MVVM folder structure.
 - As of now we have only one screen cum feature of CryptoList so folder structure is simple
 
 # Exra Information
