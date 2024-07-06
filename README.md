@@ -11,6 +11,7 @@ In this perticular Interview task I have done Functionality like
 - Adding Multiple Currency With amount to get total Value in base currency
 - Filtering/Sorting Currency List 
 - Used Riverpod for state management with MVVM architecture
+- Responsive UI for both Potrait and LandScape Mode (managed separate UI for both orientation)
 - Added Centralized Mechanism to manage Logs,Errors,Toast Msg, Success Msg, Failer Msg etc using Masage Manager Utility
 
 
