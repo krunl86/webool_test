@@ -45,7 +45,7 @@ https://youtu.be/NOONaqMayd0
 - Have feature sentric approch for folder structure. where all new feature have their separate MVVM folder structure.
 - As of now we have only one screen cum feature of CryptoList so folder structure is simple
 
-# Exra Information
+# Extra Information
 
 - I have created separate packages for internationlization for common use for centralized language support for multiple sub app
 - I have created network request separte from main app to provide same apis for other or sub apps if any we include in feature
