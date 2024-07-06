@@ -35,7 +35,7 @@ To Perform this action user hase to tap on setting icon
 
 # Video Link Of App Recording
 
-https://drive.google.com/file/d/1yiq7TQHVF45oiGTUvcWfnS_e9fdEly-O/view?usp=sharing
+https://youtu.be/NOONaqMayd0
 
 # Project Setup
 
