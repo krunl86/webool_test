@@ -16,6 +16,12 @@ In this perticular Interview task I have done Functionality like
 - project contain 3 Unit test for matching json response from servers and right data parsing based on json format
 
 
+# additional feature 
+
+- added offine curreny list feature
+- getting list only once from server then loading every time locally to prevent unnecesary api calls to paid api
+- added floor libary for manage local data storage.
+
 
 
 # How to Add New Currency ?
