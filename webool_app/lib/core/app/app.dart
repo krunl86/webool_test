@@ -19,8 +19,11 @@ class _WeboolTestState extends ConsumerState<WeboolTest> {
   @override
   void initState() {
     super.initState();
+    
+    // initialization done here all prerequied dependecy
 
-    Timer(Duration(seconds: 1), () {
+    Timer(const Duration(seconds: 1), () {
+      // after fixed time interval open dashboard
       ref.read(routerProvider).goNamed('dashboard');
     });
   }
@@ -31,7 +34,7 @@ class _WeboolTestState extends ConsumerState<WeboolTest> {
       builder: (context, child) {
         return AppRouter(
             builder: (context, router) => MaterialApp.router(
-                  title: 'HomeLister',
+                  title: 'Webool',
                   debugShowCheckedModeBanner: false,
                   routerConfig: router,
                   theme: lightTheme,

@@ -18,7 +18,7 @@ class WeboolColors extends ThemeExtension<WeboolColors> {
   final Color? fontBlack;
   final Color? fontGrey;
   final Color? fontWhite;
-  final Color? fontBlue; //first used at OTP bottomsheet
+  final Color? fontBlue; 
   final Color? fontHintLightGrey;
 
   final Color? stateEnabled;

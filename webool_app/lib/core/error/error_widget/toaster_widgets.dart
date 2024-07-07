@@ -7,28 +7,37 @@ import 'package:webool_test/core/error/error_services/message_service_base.dart'
 import '../message_model/message.dart';
 
 const _kLogDuration = Duration(seconds: 1, milliseconds: 500);
-const _kErrorDuration = Duration(seconds: 3);
+const _kErrorDuration = Duration(seconds: 4);
 final toastMessageServiceProvider =
     StateNotifierProvider<ToastMessageService, MessageServiceState>(
   (ref) => ToastMessageService(),
 );
 
+// Toaster Message SErvice class is used to add different type of message on screen
+// it will be used by Toast Message Service Provider to access Different Messsge onScreen
+
 class ToastMessageService extends MessageServiceBase {
+  // Flash Message is used to show full screen Message like Tanks You pages or Emply List Or smething that
   void addFlash(Widget fullScreenMessage) => add(
         Message(
-          duration: const Duration(seconds: 3),
+          duration: const Duration(
+              seconds:
+                  3), // this duration will be trigger to dissmiss this flash msg from queue
           builder: (context) => Positioned.fill(
+            // builder method is used to provide widget on screen
             child: fullScreenMessage,
           ),
         ),
       );
 
+  // Loader message will be used to show loaders while api fetching tasks
   void addLoader() => add(
         Message(
             builder: (context) =>
                 const Center(child: CircularProgressIndicator())),
       );
 
+  // Log message will used to show simple log or warning on screen
   void addLog({required String message}) => add(
         Message(
           duration: _kLogDuration,
@@ -54,6 +63,7 @@ class ToastMessageService extends MessageServiceBase {
         ),
       );
 
+  // SUccess messages will be used to show successful data fetch and other success or task done functions
   void addSuccess(String msg) => add(
         Message(
           duration: _kErrorDuration,
@@ -71,6 +81,7 @@ class ToastMessageService extends MessageServiceBase {
         ),
       );
 
+  // Error message is used to show errors on screen from any functions
   void addError(String error, {bool isAppbarVisible = false}) => add(
         Message(
           duration: _kErrorDuration,
@@ -88,6 +99,7 @@ class ToastMessageService extends MessageServiceBase {
       );
 }
 
+// UI for Success Message
 class SuccessToast extends StatelessWidget {
   const SuccessToast({
     super.key,
@@ -106,6 +118,7 @@ class SuccessToast extends StatelessWidget {
   }
 }
 
+// UI widget for Error messaga
 class ErrorToast extends StatelessWidget {
   const ErrorToast({
     super.key,

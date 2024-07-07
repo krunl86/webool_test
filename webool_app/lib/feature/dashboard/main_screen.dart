@@ -20,7 +20,8 @@ class _MainScreenState extends ConsumerState<MainScreen> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((time) {
+    WidgetsBinding.instance.addPostFrameCallback((time) async {
+      // getting Currency List from server
       ref.read(dashboardUseCaseProvider).getSymbols();
     });
   }
@@ -40,13 +41,11 @@ class _MainScreenState extends ConsumerState<MainScreen> {
     );
   }
 
+  /// onItemTapped used to navigate screen between using go_router
   void _onItemTapped(int index) {
+    // updating shellRoute based on index
     widget.navigationShell.goBranch(
       index,
     );
-    if (index == 0) {
-    } else if (index == 1) {
-    } else if (index == 2) {
-    } else if (index == 3) {}
   }
 }

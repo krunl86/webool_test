@@ -38,7 +38,7 @@ class _SettingVerticalLayoutState extends ConsumerState<SettingVerticalLayout> {
           const Space.h(Dimensions.medium),
           Expanded(
               child: ListView.builder(
-            itemCount: symbols?.length,
+            itemCount: symbols?.length ?? 0,
             itemBuilder: (context, index) {
               var map = symbols?[index];
               return CurrencySelectionListTile(

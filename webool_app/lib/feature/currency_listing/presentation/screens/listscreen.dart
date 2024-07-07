@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:webool_test/feature/dashboard/presentaton/controller/dashboard_controller.dart';
 import '../widget/currency_list_tile.dart';
 
+/// Currency list Screen
 class CurrencyListScreen extends ConsumerStatefulWidget {
   const CurrencyListScreen({super.key});
   static CurrencyListScreen builder(
@@ -16,7 +17,11 @@ class CurrencyListScreen extends ConsumerStatefulWidget {
 class _CurrencyListScreenState extends ConsumerState<CurrencyListScreen> {
   @override
   Widget build(BuildContext context) {
+
+
+    // watching dashboard controller's currency Symbol list
     var symbols = ref.watch(dashBoardingController).currencySymbols;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('All Available Currency'),
@@ -25,7 +30,7 @@ class _CurrencyListScreenState extends ConsumerState<CurrencyListScreen> {
         children: [
           Expanded(
               child: ListView.builder(
-            itemCount: symbols?.length,
+            itemCount: symbols?.length ?? 0,
             itemBuilder: (context, index) {
               var map = symbols?[index];
               return CurrencyListingTile(

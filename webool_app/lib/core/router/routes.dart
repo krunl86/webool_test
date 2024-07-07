@@ -6,6 +6,8 @@ import 'package:webool_test/feature/spash/spash_screen.dart';
 
 import '../../feature/dashboard/main_screen.dart';
 
+
+// app route aavailabe iin app
 final routes = [
   GoRoute(
     path: '/',

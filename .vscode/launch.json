@@ -1,0 +1,68 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "webool_app",
+            "cwd": "webool_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "webool_app (profile mode)",
+            "cwd": "webool_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "webool_app (release mode)",
+            "cwd": "webool_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "webool_common",
+            "cwd": "packages/webool_common",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "webool_common (profile mode)",
+            "cwd": "packages/webool_common",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "webool_common (release mode)",
+            "cwd": "packages/webool_common",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "webool_network",
+            "cwd": "packages/webool_network",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "webool_network (profile mode)",
+            "cwd": "packages/webool_network",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "webool_network (release mode)",
+            "cwd": "packages/webool_network",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

@@ -9,6 +9,7 @@ class CurrencyListingTile extends StatelessWidget {
     required this.map,
   });
 
+  // currency Symbol
   final Currency? map;
 
   @override

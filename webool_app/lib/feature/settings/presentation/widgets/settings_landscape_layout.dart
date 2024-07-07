@@ -30,7 +30,7 @@ class _SettingsLandscapeLayoutState
               physics: const NeverScrollableScrollPhysics(),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3, childAspectRatio: 3),
-              itemCount: symbols?.length,
+              itemCount: symbols?.length ?? 0,
               itemBuilder: (context, index) {
                 var map = symbols?[index];
                 return CurrencySelectionListTile(
