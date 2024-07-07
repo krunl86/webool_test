@@ -2,6 +2,7 @@
 
 This is application for listing currency list from open api. this project is only for interview preparation
 
+
 # Tasks
 
 In this perticular Interview task I have done Functionality like
@@ -57,6 +58,14 @@ https://youtu.be/NOONaqMayd0
 - I have created network request separte from main app to provide same apis for other or sub apps if any we include in feature
 - I have made common widgets as well for separate package along with theme data and AssetManagement for icons and common images.
 - Also for routing management i have integrated GoROuter but have not done much user in this demo app as i have only one page to work on.
+
+
+# how to run project 
+- clone projct from git url
+- move to root directory of project 
+- go to webool_app folder  
+- in terminal run " flutter run" command
+
 
 # In Last
 
