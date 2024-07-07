@@ -66,7 +66,11 @@ https://youtu.be/NOONaqMayd0
 - go to webool_app folder  
 - in terminal run " flutter run" command
 
-
+# What if token Expire for APILayer.com
+- for replacing token go to 
+- packages > webool_network > lib > common > config > api_config.dart
+- and replace "staticToken" variable with new token  
+ 
 # In Last
 
 - do let me know your feedback for this setup. love to hear from expert to evoluate my knowledge an understanding
